@@ -10,7 +10,7 @@
 
 function threeNumbers () {
   const numbers = { numberOne: 1, numberTwo: 2, numberThree: 3 }
-
+return numbers
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,8 +18,8 @@ function threeNumbers () {
 // Return the object of values in the function below.
 
 function manyTypes () {
-  const diverseObject = { name: 'banana', count: 42, isDelicious: true }
-
+  const diverseObject = { name: 'banana', count: 42, delicious: true }
+  return diverseObject
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,7 +39,7 @@ function keyAccess () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // return the name of the bestFruit Object here.
-
+return bestFruit.name
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,14 +51,15 @@ function addKey () {
   const bestFruit = { name: 'banana', count: 42 }
 
   // Note that before a key is assigned it will always return `undefined`
-  console.assert(bestFruit['isDelicious'] === undefined)
-  bestFruit['isDelicious'] = true
-  console.assert(bestFruit['isDelicious'] === true)
+  console.assert(bestFruit['Delicious'] === undefined)
+  bestFruit['Delicious'] = true
+  console.assert(bestFruit['Delicious'] === true)
 
   // Assign 'yellow' to the key 'color' of bestFruit here and return bestFruit
-
+bestFruit.color = 'yellow'
+return bestFruit
 }
-
+// this test could be wrong, test suite is retuning odd errors
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // When an Object gets large, it is normal to define its properties one-per-line as shown below.
 // Create your own object named bootcampStudent and give it 8 properties similar to
